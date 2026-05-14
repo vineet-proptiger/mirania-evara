@@ -22,7 +22,7 @@ const ProjectLogo = () => (
   <img
     src={logoImages.tarc}
     alt="Mirania Evara"
-    className="h-10 md:h-16 w-auto object-contain transition-all"
+    className="h-14 md:h-16 w-auto object-contain transition-all"
     style={{ maxWidth: '250px' }}
   />
 )
