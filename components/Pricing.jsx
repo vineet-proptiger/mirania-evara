@@ -7,10 +7,10 @@ const PRIMARY = "var(--color-primary)";
 const units = [
   {
     type: "3 BHK",
-    size: "On Request",
+    size: "1529 sq. ft.",
     price: "₹ 1.85 Cr*",
     oldPrice: "₹ 1.95 Cr*",
-    btnText: "Get Cost Sheet",
+    btnText: "Ask For Price",
     features: [
       "Limited Launch Inventory",
       "Booking Amount Only 10%*",
@@ -19,11 +19,24 @@ const units = [
     isPopular: true,
   },
   {
-    type: "4 BHK",
-    size: "On Request",
-    price: "On Request",
+    type: "3 BHK + Study",
+    size: "1727 sq. ft.",
+    price: "Ask For Price",
     oldPrice: null,
-    btnText: "Get Cost Sheet",
+    btnText: "Ask For Price",
+    features: [
+      "Limited Launch Inventory",
+      "Booking Amount Only 10%*",
+      "Flexible Payment Plan"
+    ],
+    isPopular: false,
+  },
+  {
+    type: "4 BHK",
+    size: "2543 sq. ft.",
+    price: "Ask For Price",
+    oldPrice: null,
+    btnText: "Ask For Price",
     features: [
       "Limited Launch Inventory",
       "Booking Amount Only 10%*",
@@ -70,17 +83,10 @@ const Pricing = ({ setIsOpen }) => {
           </h2>
 
           <div className="w-20 h-1 mx-auto rounded-full mb-6" style={{ background: GOLD }} />
-
-          {/* <p
-            className="max-w-2xl mx-auto text-gray-500"
-            style={{ fontFamily: F_SANS, fontSize: '14px' }}
-          >
-            Forest living residences crafted for discerning homebuyers on Dwarka Expressway — Gurugram&apos;s most coveted address.
-          </p> */}
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {units.map((unit, idx) => (
             <div
               key={idx}

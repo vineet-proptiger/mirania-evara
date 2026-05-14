@@ -8,20 +8,20 @@
    THEME VARIABLES — Lodha (Golden Amber & Charcoal Theme)
    ═══════════════════════════════════════════════════════════════ */
 :root {
-  /* ── Golden Amber Accent Palette ── */
-  --color-gold: #B58728;
-  /* Primary accent color */
-  --color-gold-light: #C9A04A;
+  /* ── Deep Blue Accent Palette ── */
+  --color-gold: #12447F;
+  /* Primary accent color (Blue) */
+  --color-gold-light: #1E589E;
   /* Lighter vibrant variant */
-  --color-gold-dark: #8C6920;
-  /* Deeper variant  */
-  --color-gold-bg: #FBF6E8;
+  --color-gold-dark: #0A2F5C;
+  /* Deeper variant */
+  --color-gold-bg: #E7EEF6;
   /* Tinted background variant */
 
-  /* ── Charcoal Gray Primary Palette ── */
-  --color-primary: #6D6E70;
-  --color-primary-light: #8A8B8D;
-  --color-primary-dark: #555658;
+  /* ── Deep Blue Primary Palette ── */
+  --color-primary: #12447F;
+  --color-primary-light: #1E589E;
+  --color-primary-dark: #0A2F5C;
 
   --color-dark: #3A3B3C;
   --color-dark-mid: #4A4B4D;
@@ -41,11 +41,11 @@
   --btn-radius-pill: 50px;
 
   /* ── Shadows ── */
-  --shadow-sm: 0 2px 8px rgba(181, 135, 40, 0.08);
-  --shadow-md: 0 8px 24px rgba(181, 135, 40, 0.14);
-  --shadow-lg: 0 20px 48px rgba(181, 135, 40, 0.18);
+  --shadow-sm: 0 2px 8px rgba(18, 68, 127, 0.08);
+  --shadow-md: 0 8px 24px rgba(18, 68, 127, 0.14);
+  --shadow-lg: 0 20px 48px rgba(18, 68, 127, 0.18);
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
-  --color-shadow-inner: rgba(181, 135, 40, 0.10);
+  --color-shadow-inner: rgba(18, 68, 127, 0.10);
 }
 
 /* ─── Keyframes ─────────────────────────────────────────────── */
@@ -92,11 +92,11 @@
 
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(181, 135, 40, 0.5);
+    box-shadow: 0 0 0 0 rgba(18, 68, 127, 0.5);
   }
 
   50% {
-    box-shadow: 0 0 0 10px rgba(181, 135, 40, 0);
+    box-shadow: 0 0 0 10px rgba(18, 68, 127, 0);
   }
 }
 
@@ -126,11 +126,11 @@
 
   0%,
   100% {
-    border-color: rgba(181, 135, 40, 0.4);
+    border-color: rgba(18, 68, 127, 0.4);
   }
 
   50% {
-    border-color: rgba(181, 135, 40, 1);
+    border-color: rgba(18, 68, 127, 1);
   }
 }
 
@@ -566,7 +566,7 @@ nav.fixed {
 
 /* ─── Teal-Cyan focus ring globally ─────────────────────────────────── */
 *:focus-visible {
-  outline: 2px solid rgba(181, 135, 40, 0.5);
+  outline: 2px solid rgba(18, 68, 127, 0.5);
   outline-offset: 3px;
   border-radius: 4px;
 }
