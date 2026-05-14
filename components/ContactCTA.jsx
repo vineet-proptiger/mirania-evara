@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { getGeo, buildTrackingFields } from '../lib/formMeta'
 
@@ -161,7 +162,7 @@ const ContactCTA = () => {
                 <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer', textAlign: 'left' }}>
                   <input type="checkbox" required defaultChecked style={{ accentColor: GOLD, marginTop: '2px', flexShrink: 0 }} />
                   <span style={{ fontSize: '12px', color: '#777', fontFamily: F_SANS, lineHeight: 1.5 }}>
-                    I agree to receive updates as per the <a href="/privacy-policy" className="underline hover:text-[var(--color-gold)]">Privacy Policy</a>
+                    I agree to receive updates as per the <Link href="/privacy-policy" className="underline hover:text-[var(--color-gold)]" title="Read our Privacy Policy">Privacy Policy</Link>
                   </span>
                 </label>
 

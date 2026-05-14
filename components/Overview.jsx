@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { getGeo, buildTrackingFields } from '../lib/formMeta'
 import { overviewImage } from '../lib/images'
@@ -177,8 +178,8 @@ const EarlyForm = () => {
       <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer', marginTop: 'auto' }}>
         <input type="checkbox" required defaultChecked
           style={{ accentColor: 'var(--color-gold)', marginTop: '3px', flexShrink: 0, width: '14px', height: '14px' }} />
-        <span style={{ fontSize: '11px', color: '#9ca3af', fontFamily: F_SANS, lineHeight: 1.6 }}>
-          I agree to receive updates as per the <a href="/privacy-policy" className="underline hover:text-[var(--color-gold)]">Privacy Policy</a>
+        <span style={{ fontSize: '12px', color: '#777', fontFamily: F_SANS, lineHeight: 1.5 }}>
+          I agree to receive updates as per the <Link href="/privacy-policy" className="underline hover:text-[var(--color-gold)]" title="Read our Privacy Policy">Privacy Policy</Link>
         </span>
       </label>
 

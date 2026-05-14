@@ -1,6 +1,7 @@
-﻿'use client'
+'use client'
 import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 import { logoImages } from '../lib/images'
 
 const GOLD = 'var(--color-gold)'
@@ -45,25 +46,25 @@ const Navbar = ({ setIsOpen }) => {
         <div className="flex items-center justify-between h-[80px]">
 
           {/* Logo */}
-          <a href="#" className="flex items-center shrink-0">
+          <Link href="/" className="flex items-center shrink-0" title="Mirania Evara — Home">
             <ProjectLogo />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-6">
             {navLinks.map(link => (
-              <a key={link.name} href={link.href}
+              <Link key={link.name} href={link.href} title={`View ${link.name} Section`}
                 className="text-[13px] font-medium text-[var(--color-text-mid)] hover:text-gold transition-colors tracking-wide relative group"
                 style={{ fontFamily: 'var(--font-sans)' }}>
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300" style={{ background: GOLD }} />
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Call Now - Desktop */}
           <a href="tel:9718344024"
-            className="hidden lg:flex btn-gold"
+            className="hidden lg:flex btn-gold" title="Call Us Now"
             style={{ borderRadius: '50px', textDecoration: 'none', alignItems: 'center', gap: '8px' }}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
@@ -87,16 +88,16 @@ const Navbar = ({ setIsOpen }) => {
       {mobileOpen && (
         <div className="lg:hidden bg-[var(--color-bg)] border-t border-gray-100 shadow-lg">
           {navLinks.map(link => (
-            <a key={link.name} href={link.href}
+            <Link key={link.name} href={link.href} title={`Navigate to ${link.name}`}
               onClick={() => setMobileOpen(false)}
               className="block px-6 py-3.5 text-sm text-[var(--color-text-mid)] hover:bg-[var(--color-bg-light)] border-b border-gray-50 hover:text-gold transition-colors"
               style={{ fontFamily: 'var(--font-sans)' }}>
               {link.name}
-            </a>
+            </Link>
           ))}
           <div className="p-4">
             <a href="tel:9718344024"
-              className="w-full btn-gold"
+              className="w-full btn-gold" title="Call Our Expert"
               style={{ borderRadius: '50px', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
