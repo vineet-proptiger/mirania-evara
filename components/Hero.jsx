@@ -108,22 +108,7 @@ const Hero = ({ setIsOpen }) => {
                 data-aos="fade-up" data-aos-delay="280">
                 3 &amp; 4 BHK EM Bypass Luxury Living
               </p>
-              {/* ── Google Rating ── */}
-              {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
-                data-aos="fade-up" data-aos-delay="320">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#4285F4" />
-                  <text x="12" y="16" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#fff">G</text>
-                </svg>
-                <span style={{ display: 'flex', gap: '2px' }}>
-                  {[1, 2, 3, 4].map(s => (
-                    <svg key={s} width="12" height="12" viewBox="0 0 24 24" fill="#FBBC04"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
-                  ))}
-                  <svg width="12" height="12" viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="50%" stopColor="#FBBC04" /><stop offset="50%" stopColor="#e5e7eb" /></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half)" /></svg>
-                </span>
-                <span style={{ fontFamily: F_SANS, fontSize: '12px', color: '#374151', fontWeight: '700' }}>4.7</span>
-                <span style={{ fontFamily: F_SANS, fontSize: '11px', color: '#9ca3af' }}>Stars 83 Reviews</span>
-              </div> */}
+
             </div>
 
             {/* ── Project Specs ── */}
